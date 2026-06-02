@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Aplications - Little Italy Pizzeria</title>
+
+    <link rel="stylesheet" href="jobs.css" />
+    <script src="jobs.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Job Aplications - Little Italy Pizzeria</h1>
+      <a class="skip-link" href="#main-content">Skip to main content</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="program.html">Operating Hours</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="card.html">Business Card</a></li>
+          <li><a href="overview.html">Overview</a></li>
+          <li><a href="chatbot.html">Chatbot</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main-content">
+      <section class="hero">
+        <h2>Join Our Team</h2>
+        <p>Become part of the Little Italy family. We are always looking for passionate people.</p>
+      </section>
+      <section class="benefits">
+        <article class="card green">
+          <h3>Flexible Schedule</h3>
+          <p>Work hours adapted to your availability.</p>
+        </article>
+
+        <article class="card white">
+          <h3>Friendly Team</h3>
+          <p>Positive environment and teamwork.</p>
+        </article>
+
+        <article class="card red">
+          <h3>Employee Discounts</h3>
+          <p>Enjoy discounts on your favorite meals.</p>
+        </article>
+      </section>
+
+      <section>
+        <h2>Application Form</h2>
+
+        <form id="applicationForm" novalidate>
+          <fieldset>
+            <legend>Candidate Information</legend>
+
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+
+              <input type="text" id="fullName" name="fullName" />
+
+              <span class="error" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+
+              <input type="email" id="email" name="email" />
+
+              <span class="error" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+
+              <input type="tel" id="phone" name="phone" />
+
+              <span class="error" id="phoneError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="position">Position</label>
+
+              <select id="position">
+                <option value="">Choose Position</option>
+                <option>Chef</option>
+                <option>Waiter</option>
+                <option>Delivery Driver</option>
+                <option>Manager</option>
+              </select>
+
+              <span class="error" id="positionError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="experience">Experience</label>
+
+              <textarea id="experience" rows="4"></textarea>
+
+              <span class="error" id="experienceError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="cvLink">CV Link</label>
+
+              <input type="url" id="cvLink" />
+
+              <span class="error" id="cvError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="availableDate">Date</label>
+
+              <input type="date" id="availableDate" />
+
+              <span class="error" id="dateError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="photo">Profile Photo</label>
+
+              <input type="file" id="photo" accept="image/*" />
+
+              <span class="error" id="photoError"></span>
+            </div>
+
+            <div class="buttons">
+              <button type="submit">Submit Application</button>
+
+              <button type="reset">Reset Form</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+
+      <section>
+        <h2>Submitted Applications</h2>
+
+        <div class="table-wrapper">
+          <table id="applicationsTable">
+            <caption>Job Applications</caption>
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone number</th>
+                <th scope="col">Position</th>
+                <th scope="col">Experience</th>
+                <th scope="col">CV</th>
+                <th scope="col">Photo</th>
+                <th scope="col">Date</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+1.
+Paragraph A:
+color, font-size, font-family, line-height, padding - element selector
+
+Paragraph B:
+color, font-size, padding, font-family, background-color, border-left - class selector
+line-height - element selector
+
+Paragraph C:
+color, font-size, font-family, padding, background-color, font-style, text-transform, letter-spacing, border - id selector
+line-height - element selector
+
+Paragraph D:
+color, background-color, border, font-size, font-style, letter-spacing - (#warning.info)
+font-family - id selector
+line-height - element selector
+
+2.
+color: darkorange - #warning.info (id + class > id > class > element)
+font family: Courier New, monospace (id > class > element)
+
+3.
+The color follows the internal CSS rule and the rest of the properties are from the stylesheet. This is affected by the
+order of the code, if I put the link to the stylesheet after the <style> tag from head, the color of the h1 will be determined
+by the style1.css.

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Feedback</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            h2{
+                color: rgb(255, 221, 0);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Feedback</h1>
+            <a href="#main-content" class="skip-link">Skip to main content</a>
+        </header>
+        <nav aria-label="Main navigation">
+            <div class="links">
+                <ul class="list">
+                    <li><a href="index.html">Home</a></li>
+                   <li><a href="menu.html">Menu</a></li>
+                   <li><a href="program.html">Operating Hours</a></li>
+                   <li><a href="card.html">Business card</a></li>
+                   <li><a href="overview.html">Overview</a></li>
+                   <li><a href="chatbot.html">Chatbot</a></li>
+                   <li><a href="jobs.html">Join us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main id="main-content">
+            <section>
+                <h2>Please leave us a review!</h2>
+                <form method="post" action="#" aria-label="Feedback form">
+                    <fieldset>
+                        <legend>Your details</legend>
+                        <label for="name">Full name (required)</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email (required)</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="rating">Rating</label>
+                        <select id="rating" name="rating">
+                            <option value="1">⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Give us more details</legend>
+                        <textarea id="msg" name="message" rows="10" required></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>How did you hear about us?</legend>
+                        <label for="hear-friends">Friends</label>
+                        <input type="radio" id="hear-friends" name="hear" value="friends">
+                        <label for="hear-ads">Ads</label>
+                        <input type="radio" id="hear-ads" name="hear" value="ads">
+                        <label for="hear-other">Other</label>
+                        <input type="radio" id="hear-other" name="hear" value="other">
+                    </fieldset>
+                    <button type="submit" style="background-color: lightgreen;">Send review</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

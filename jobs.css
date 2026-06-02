@@ -23,13 +23,13 @@ nav li{
 }
 
 nav a{
-    color:white;
+    color:rgb(0, 0, 0);
     font-size:1.2rem;
 }
 
 .skip-link{
     text-align: center;
-    color:white;
+    color:rgb(0, 0, 0);
 }
 
 .hero{
